@@ -1,0 +1,26 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+#background{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-position: center;
+    object-fit: cover;
+}
+.secondary{
+    animation: fade 6s infinite;
+}
+@keyframes fade{
+0%, 45% {opacity: 0;}
+50%, 95%{opacity: 1;}
+100%{opacity: 0;}
+}
